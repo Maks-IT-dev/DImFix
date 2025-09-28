@@ -33,7 +33,7 @@ nav a:hover {
 }
 
 .hero {
-    background: url('dded38016f01378902d768d78d5ff10b.jpg') center/cover no-repeat;
+    background: url('/photos/dded38016f01378902d768d78d5ff10b.jpg') center/cover no-repeat;
     height: 100vh;
     display: flex;
     flex-direction: column;
