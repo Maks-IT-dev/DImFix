@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DimFix - Wykończenia i remonty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DimFix - Wykończenia i remonty</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #d4af37;
+        }
+
+        header {
+            background: #000;
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #d4af37;
+        }
+
+        header img {
+            height: 60px;
+        }
+
+        nav a {
+            color: #d4af37;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        .hero {
+            background: url('your-image.jpg') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin: 0;
+            color: #fff;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .hero button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background: #d4af37;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section h3 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background: #111;
+            padding: 20px;
+            border: 1px solid #d4af37;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            background: #222;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 1px solid #d4af37;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #d4af37;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .contact-buttons {
+            margin-top: 20px;
+        }
+
+        .contact-buttons a {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 10px;
+            background: #d4af37;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .contact-buttons a:hover {
+            background: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.jpg" alt="DimFix Logo">
+        <nav>
+            <a href="#about">O nas</a>
+            <a href="#services">Usługi</a>
+            <a href="#gallery">Galeria</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Szybkie i jakościowe wykończenia</h2>
+        <p>To nie marzenie, a rzeczywistość</p>
+        <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+            Bezpłatna konsultacja
+        </button>
+    </section>
+
+    <section id="about">
+        <h3>O nas</h3>
+        <p style="text-align:center; max-width:800px; margin:auto; color:#ccc;">
+            DimFix to firma, która specjalizuje się w szybkich i profesjonalnych remontach oraz pracach wykończeniowych.
+            Nasz zespół doświadczonych fachowców sprosta każdemu wyzwaniu – od drobnych napraw po kompleksowe remonty.
+        </p>
+    </section>
+
+    <section id="services">
+        <h3>Nasze Usługi</h3>
+        <div class="services">
+            <div class="service-card">Kompleksowe remonty</div>
+            <div class="service-card">Wykończenia wnętrz</div>
+            <div class="service-card">Naprawy i modernizacje</div>
+            <div class="service-card">Doradztwo i wycena</div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h3>Galeria</h3>
+        <div class="gallery">
+            <img src="photo_2025-09-28_18-47-24.jpg" alt="Galeria 1">
+            <img src="photo_2025-09-28_18-47-27.jpg" alt="Galeria 2">
+            <img src="photo_2025-09-28_18-47-34.jpg" alt="Galeria 3">
+            <img src="photo_2025-09-28_18-48-00.jpg" alt="Galeria 4">
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h3>Kontakt</h3>
+        <p><a href="https://instagram.com/dimfixdf" target="_blank">Instagram: @dimfixdf</a></p>
+        <p><a href="https://tiktok.com/@dimfix1" target="_blank">TikTok: @dimfix1</a></p>
+        <p><a href="tel:+48666318948">Telefon / WhatsApp: +48 666 318 948</a></p>
+        <p><a href="mailto:kontakt@dimfix.pl">Email: kontakt@dimfix.pl</a></p>
+        <p>&copy; 2025 DimFix. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <!-- 🔥 Плаваючі кнопки -->
+    <div class="floating-buttons">
+        <a href="tel:+48666318948">📞</a>
+        <a href="mailto:kontakt@dimfix.pl">✉️</a>
+    </div>
+
+</body>
+</html>
