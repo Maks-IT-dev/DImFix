@@ -5,6 +5,12 @@ body {
     color: #d4af37;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 header {
     background: #000;
     padding: 10px 40px;
@@ -33,7 +39,7 @@ nav a:hover {
 }
 
 .hero {
-    background: url('/photos/dded38016f01378902d768d78d5ff10b.jpg') center/cover no-repeat;
+    background: url('photos/dded38016f01378902d768d78d5ff10b.jpg') center/cover no-repeat;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -85,22 +91,25 @@ section h3 {
 }
 
 .services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .service-card {
-    background: #111;
+    background: #444;
+    color: #fff;
     padding: 20px;
-    border: 1px solid #d4af37;
     border-radius: 10px;
     text-align: center;
-    transition: 0.3s;
+    width: 200px;
+    transition: transform 0.3s;
 }
 
 .service-card:hover {
-    background: #222;
+    transform: translateY(-5px);
+    background: #666;
 }
 
 .gallery {
@@ -160,4 +169,5 @@ footer a {
 .floating-buttons a:hover {
     background: #fff;
     color: #000;
+
 }
