@@ -124,23 +124,24 @@ section h3 {
 }
 
 footer {
-    background: #000;
-    text-align: center;
-    padding: 30px 20px;
-    border-top: 1px solid #d4af37;
-}
-
-footer p {
-    margin: 5px 0;
+    background-color: #222;      
+    color: #fff;                  
+    text-align: center;          
+    padding: 20px;               
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 footer a {
-    color: #d4af37;
-    text-decoration: none;
-    margin: 0 10px;
+    color: #ff4d4d;              
+    text-decoration: none;       
+    transition: color 0.3s;
 }
 
-/* 🔥 Липкі кнопки */
+footer a:hover {
+    color: #ffa07a;            
+}
+
 .floating-buttons {
     position: fixed;
     bottom: 20px;
@@ -171,3 +172,4 @@ footer a {
     color: #000;
 
 }
+
